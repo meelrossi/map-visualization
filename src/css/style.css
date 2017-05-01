@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.background {
+  background-color: orange;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+
+.home-logo {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.my-trips-title {
+    position: relative;
+    top: -150px;
+    color: white;
+}
+
+.suitcase-img {
+  position: relative;
+  top: -207px;
+  left: 90px;
+  display: inline-block;
+}
+
+.world-map {
+  width: 800px;
+}
+
+.home-image {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  height: 200px;
+  width: 300px;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.hover-info {
+  background: white;
+  padding: 5px;
+  border: 1px;
+  border-radius: 8px;
+  pointer-events: none;
+  text-align: center;
+}
+
+#map {
+  width: calc(100% - 400px);
+  height: 900px;
+  position: relative;
+}
