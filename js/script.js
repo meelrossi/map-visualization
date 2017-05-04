@@ -125,6 +125,9 @@ d3.json("data.json", function(data) {
   }
 
   function updateCities(cities) {
+    var cities = cities.filter(function(elem, index, self) {
+      return index == self.indexOf(elem);
+    });
     document.getElementsByClassName("number-cities")[0].innerHTML = cities.length;
     d3.selectAll(".city-span").remove();
     d3.select("#cities-list").selectAll(".city-span")
