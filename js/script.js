@@ -14,7 +14,7 @@ d3.json("data.json", function(data) {
         borderOpacity: 1,
         borderColor: '#FDFDFD',
         popupTemplate: function(geography, data) {
-          return '<div class="hover-info"><b>' + geography.properties.name + '</b><br>' + data.days + ' dias' + '</div>';
+          return '<div class="hover-info"><b>' + geography.properties.name + '</b><br>' + data.days + ' days' + '</div>';
         },
         popupOnHover: true,
         highlightOnHover: true,
