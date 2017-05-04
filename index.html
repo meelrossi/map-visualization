@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" type="image/x-icon" href="assets/world-map.png" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
@@ -39,11 +39,17 @@
       <img class="home-image" style='background-image: url("assets/landscapes/image25.JPG")'/>
       <img class="home-image" style='background-image: url("assets/landscapes/image26.JPG")'/>
     </div>
-    <div style="border: 20px solid black">
-      <div id="map">
+    <div id="container">
+      <div id="cities">
+        <span class="number-cities">0</span><br/><span style="font-size: 30px;"> CITIES </span><br><br>
+        <div id="cities-list">
 
+        </div>
       </div>
+      <div id="map"></div>
+      <div id="brush"></div>
     </div>
+  </div>
   </body>
   <script src="js/script.js"></script>
 </html>

@@ -1,15 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
-}
-
-.background {
-  background-color: orange;
-  height: 100%;
-  opacity: 0.5;
-  position: absolute;
-  width: 100%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .home-logo {
@@ -64,8 +56,59 @@ body {
   text-align: center;
 }
 
+#cities {
+  width: 400px;
+  float: right;
+  text-align: center;
+  padding-top: 200px;
+}
+
+#cities-list {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.number-cities {
+  font-size: 150px;
+}
+
+#container {
+  border: 20px solid black;
+}
+
 #map {
   width: calc(100% - 400px);
   height: 900px;
   position: relative;
+}
+
+/* d3-brush */
+
+.grid-background {
+  fill: #ddd;
+}
+
+.extent {
+  fill: rgb(255, 204, 153);
+}
+
+.grid line {
+  stroke: #fff;
+}
+
+.grid .minor line {
+  stroke-opacity: .5;
+}
+
+.grid text {
+  display: none;
+}
+
+.axis line {
+  stroke: #000;
+}
+
+.axis path,
+.grid path {
+  display: none;
 }
